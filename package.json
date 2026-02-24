@@ -1,0 +1,65 @@
+{
+  "name": "devault",
+  "version": "1.0.0",
+  "description": "DeVault - Decentralized token locking platform on BNB Chain with reward calculation",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:gas": "REPORT_GAS=true hardhat test",
+    "coverage": "hardhat coverage",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network bscTestnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network bscMainnet",
+    "verify:testnet": "hardhat run scripts/verify.js --network bscTestnet",
+    "verify:mainnet": "hardhat run scripts/verify.js --network bscMainnet",
+    "node": "hardhat node",
+    "clean": "hardhat clean",
+    "format": "prettier --write 'contracts/**/*.sol' 'test/**/*.js' 'scripts/**/*.js'",
+    "lint": "solhint 'contracts/**/*.sol'"
+  },
+  "keywords": [
+    "blockchain",
+    "bnb-chain",
+    "defi",
+    "token-locking",
+    "smart-contracts",
+    "solidity",
+    "hardhat",
+    "decentralized",
+    "vault"
+  ],
+  "author": "DeVault Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/DeVault.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/DeVault/issues"
+  },
+  "homepage": "https://github.com/yourusername/DeVault#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^10.0.0",
+    "chai": "^4.3.10",
+    "ethers": "^6.9.0",
+    "hardhat": "^2.19.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "prettier": "^3.0.0",
+    "prettier-plugin-solidity": "^1.2.0",
+    "solhint": "^4.0.0",
+    "solidity-coverage": "^0.8.5",
+    "typechain": "^8.3.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.1"
+  }
+}
