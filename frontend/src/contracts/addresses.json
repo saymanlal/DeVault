@@ -1,0 +1,10 @@
+{
+  "DeVault": "PASTE_YOUR_DEVAULT_ADDRESS_HERE",
+  "MockToken": "PASTE_YOUR_MOCKTOKEN_ADDRESS_HERE",
+  "networkId": 97,
+  "networkName": "bsc-testnet",
+  "bscTestnet": {
+    "DeVault": "0x6638fd91020E46272EB18a1C8aA0BbCf196BCA41",
+    "MockToken": "0x66BA05d7E0209fC250c32E16428B4C1D61672f12"
+  }
+}
